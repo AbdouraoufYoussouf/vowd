@@ -1,0 +1,88 @@
+/**********************************************************************************************/
+/********************************************* alert ******************************************/
+/**********************************************************************************************/
+
+.alert-container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 40vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 90vw;
+    height: auto;
+    border-radius: 5vw;
+    background: linear-gradient(rgb(17, 29, 39), rgb(108, 121, 129));
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1000;
+}
+
+.alert-container__closed {
+    position: absolute;
+    right: 5vw;
+    margin-top: 5vw;
+    font-size: 8vw;
+    color: rgb(0, 225, 255);
+    cursor: pointer;
+    transition: color .4s;
+}
+
+.alert-container__closed:hover {
+    color: rgb(204, 1, 1);
+    transition: color .4s;
+}
+
+.alert-container>header>h1 {
+    margin-top: 12vw;
+    text-align: center;
+    letter-spacing: .2vw;
+    color: white;
+    font-size: 6vw;
+}
+
+.alert-container>p {
+    position: relative;
+    margin-bottom: 8vw;
+    text-align: left;
+    font-size: 4.5vw;
+    line-height: 7vw;
+    letter-spacing: .2vw;
+    color: white;
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /********************************************* alert ******************************************/
+    /**********************************************************************************************/
+	.alert-container {
+        top: 150px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-radius: 30px;
+    }
+    
+    .alert-container__closed {
+        right: 25px;
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .alert-container>header>h1 {
+        margin-top: 40px;
+        letter-spacing: 1px;
+        font-size: 22px;
+    }
+    
+    .alert-container>p {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+}

@@ -1,0 +1,69 @@
+[
+	{
+        "title1": "Technologies",
+        "list1": [
+            "React",
+            "Java Script",
+            "Jquery",
+            "Node JS",
+            "Express",
+            "MongoDB",
+            "Bootstrap",
+            "HTML",
+            "CSS",
+            "..."
+        ]
+        
+        ,
+    
+        "title2": "Hardskills",
+        "list2": [
+            "Conception de site web",
+            "JS Orienté Objet",
+            "Fonctionnalités JS",
+            "Plans test d'acceptation",
+            "Intégration de maquette",
+            "Optimisation de site web",
+            "Rapports d'analyse...",
+            "Sites web reactifs",
+            "Gestion de base de donnée",
+            "Création d'API R. sécurisée JS",
+            "Infographie",
+            "..."
+        ]
+        
+        ,
+    
+        "title3": "Madskills",
+        "list3": [
+            "Web design",
+            "Responsive design",
+            "Animations CSS",
+            "Rédaction de contenu web",
+            "Illustration, mise en page",
+            "SEO, Accéssibilité",
+            "MERN Stack",
+            "..."
+        ]
+
+        ,
+    
+        "title4": "Softskills",
+        "list4": [
+            "Curiosité",
+            "Autonomie",
+            "Écoute active",
+            "Communication orale",
+            "Respect et intégrité",
+            "Authenticité",
+            "Flexibilité",
+            "Attitude positive",
+            "Faire confiance",
+            "Responsabilité",
+            "Résolution de problèmes",
+            "Ouverture à la nouveauté",
+            "Adaptabilité",
+            "..."
+        ]
+	}
+]

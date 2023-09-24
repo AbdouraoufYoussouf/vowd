@@ -1,0 +1,304 @@
+/**********************************************************************************************/
+/********************************************** app *******************************************/
+/**********************************************************************************************/
+
+header,
+footer, 
+section, 
+article {
+    overflow: hidden;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+ul, li {
+    list-style:none;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 0;
+}
+
+input, textarea{
+    border: 0;
+    text-decoration: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+textarea {
+    border: 0;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+}
+
+.arrow-down {
+    width: 10vw;
+    height: auto;
+    opacity: .6;
+} 
+
+.arrow-left {
+	position: absolute;
+	top: 30px;
+	font-size: 6.5vw;
+	color: rgb(2, 113, 128);
+	transition: color .4s;
+	cursor: pointer;
+	z-index: 500;
+}
+
+.logout__btn {
+	position: absolute;
+	top: 30px;
+	float: right;
+	right: 7.5vw;
+	font-size: 6vw;
+	color: rgb(2, 113, 128);
+	transition: color .4s;
+	cursor: pointer;
+	z-index: 500;
+}
+
+.logout__btn:hover,
+.arrow-left:hover {
+	color: rgb(0, 225, 255);
+	transition: color .4s;
+}
+
+.logout__btn:active,
+.arrow:active {
+	color: rgb(2, 113, 128);
+}
+
+.x-delete {
+    float: right;
+    font-size: 4vw;
+    color: rgb(2, 113, 128);
+    opacity:0.8;
+    cursor: pointer;
+}
+
+.x-delete:hover {
+    color: red ;
+    opacity:1
+}
+
+/**********************************************************************************************/
+/********************************************* form *******************************************/
+/**********************************************************************************************/
+
+.form {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 2;
+}
+
+.form-group{
+    margin-bottom: 10px;
+}
+
+.form-group > input,
+.form-group > textarea,
+.form-group > select {
+    border-radius: 1vw;
+    width: 80vw;
+    margin-bottom: 2px;
+    padding-left: 2vw;
+    font-family: Open, sans-serif;
+	font-size: 5vw;
+    font-weight: 300;
+    letter-spacing: .1vw;
+    opacity: 1;
+    border: solid 2px transparent;
+}
+
+.form-group > input,
+.form-group > textarea {
+    background-color: rgba(0, 62, 88, 0.4);
+}
+
+.form-group > select {
+    background-color: white;
+}
+
+.form-group input:hover,
+.form-group textarea:hover,
+.form-group select:hover {
+    border: solid 2px white;
+}
+
+.form-group input:focus,
+.form-group input:focus[type=password],
+.form-group textarea:focus,
+.form-group select:focus {
+    color: black;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder,
+.form-group select option::placeholder {
+    color: white;
+    opacity: .7;
+}
+
+.form-group input:focus::placeholder,
+.form-group textarea:focus::placeholder,
+.form-group select option:focus::placeholder {
+    color: rgb(90, 90, 90);
+    opacity: .7;
+}
+
+.form-group input,
+.form-group select {
+    height: 14vw;
+}
+
+#select-label-projet,
+#select-label-budget,
+#select-label-delai {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 5vw;
+    font-weight: 500;
+}
+
+.form-group label {
+    display: none;
+}
+
+.error-message {
+    font-family: 'Open', sans-serif;
+    font-size: 4.5vw;
+    font-style: italic;
+    color: red;
+    margin-top:1px
+}
+
+.formSubmit {
+	border: 0;
+    font-family: Open, sans-serif;
+	background-color: rgb(255, 145, 0);
+    box-shadow: rgba(255, 58, 58, 0.5) 0px 30px 60px -12px inset, 
+    rgba(255, 72, 0, 0.719) 0px 18px 36px -18px inset;
+	color: white;
+	cursor: pointer;
+	transition: background-color .2s;
+}
+
+.formSubmit:hover {
+	transition: background-color .2s;
+	background-color: rgb(255, 177, 31);
+}
+
+.formSubmit:active {
+	background-color: rgb(255, 208, 0);
+}
+
+.loader{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 100%; /* Largeur à 100% pour occuper tout l'espace de l'élément parent */
+    height: 100%; /* Hauteur à 100% pour occuper tout l'espace de l'élément parent */
+    background: linear-gradient(rgb(17, 29, 39), rgb(108, 121, 129));
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /***************************************** contact-form ***************************************/
+    /**********************************************************************************************/
+
+    .arrow-down {
+        width: 40px;
+    }
+
+    .arrow-left {
+        font-size: 28px;
+    }
+
+    .logout__btn {
+		font-size: 28px;
+	}
+
+    .form {
+        width: 300px;
+    }
+
+    .form-group > input,
+    .form-group > select {
+        border-radius: 6px;
+        width: 100%;
+        margin-bottom: 2px;
+        padding-left: 20px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 1px;
+    }
+    
+    .form-group > textarea {
+        border-radius: 6px;
+        width: 100%;
+        margin-bottom: 12px;
+        padding-left: 20px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 1px;
+    }
+    
+    .form-group input,
+    .form-group select {
+        height: 60px;
+    }
+
+    #select-label-projet,
+    #select-label-budget,
+    #select-label-delai {
+        font-size: 20px;
+    }
+
+    .error-message {
+        font-size: 16px;
+    }
+
+    
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 599px ****************************************/
+
+@media screen and (min-width: 600px) {
+
+    /**********************************************************************************************/
+    /***************************************** contact-form ***************************************/
+    /**********************************************************************************************/
+
+    .form {
+        width: 500px;
+    }
+}

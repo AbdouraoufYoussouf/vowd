@@ -1,0 +1,208 @@
+/**********************************************************************************************/
+/******************************************* portfolio ****************************************/
+/**********************************************************************************************/
+
+.portfolio__icon {
+    margin-bottom: -5.8vw;
+    font-size: 11vw;
+    color: rgb(112, 190, 247);
+}
+
+.portfolio__book {
+    position: relative;
+    flex-direction: column;
+    padding-top: 20vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 20vw;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    z-index: 4;
+}
+
+.portfolio__book__link {
+    position: relative;
+    margin-left: 0;
+    margin-bottom: 10vw;
+    list-style: none;
+    width: 100%;
+    height: 80vw;
+    border-radius: 3vw;
+    cursor: pointer;
+}
+
+.portfolio__book__link__article {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    height: 80vw;
+    border-radius: 3vw;
+    color: white;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, 
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.portfolio__book__link:hover {
+    box-shadow: rgba(95, 95, 95, 0.12) 0px 2px 4px 0px, rgba(0, 0, 0, 0.32) 0px 2px 16px 0px;
+    border-radius: 3vw;
+}
+
+.portfolio__book__link__article__cover {
+    position: relative;
+    height: 80vw;
+    width: auto;
+    opacity: .5;
+    border-radius: 3vw;
+    filter: brightness(60%);
+    transition: opacity .4s ease-in-out;
+}
+
+.portfolio__book__link:hover .portfolio__book__link__article__cover {
+    opacity: 1;
+    border-radius: 3vw;
+    transition: opacity .4s ease-in-out;
+}
+
+.portfolio__book__link__article > div {
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    text-align: left;
+    width: 100%;
+    height: 19vw;
+    background-color: rgb(30, 100, 129);
+    box-shadow: rgba(50, 50, 93, 0.5) 0px 30px 60px -12px inset, 
+    rgba(0, 0, 0, 0.5) 0px 18px 36px -18px inset;
+    z-index: 1;
+}
+
+.portfolio__book__link__title {
+    position: absolute;
+    display: inline-block;
+    text-align: right;
+    margin-left: -5vw;
+    top: 5%;
+    line-height: 10vw;
+    letter-spacing: .2vw;
+    width: 100%;
+    font-size: 10vw;
+    font-weight: bold;
+    font-family: 'Helvetica';
+    background-color: rgba(0, 0, 0, 0.4);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-color .2s ease-in-out;
+    z-index: 200;
+}
+
+.portfolio__book__link:hover .portfolio__book__link__title {
+    background-color: white;
+    transition: background-color .2s ease-in-out;
+
+}
+
+.portfolio__book__link__article__info > h3 {
+    position: absolute;
+    width: 100%;
+    margin-left: 5vw;
+    top: 5vw;
+    font-size: 6vw;
+    font-weight: 500;
+    font-family: 'Open-sans', sans-serif;
+}
+
+.portfolio__book__link__article__info > p {
+    position: relative;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    top: 5.3vw;
+    font-size: 5vw;
+    font-weight: 500;
+    letter-spacing: .2vw;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: 'Open-sans', sans-serif;
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /******************************************* portfolio ****************************************/
+    /**********************************************************************************************/
+
+    .portfolio__icon {
+        margin-bottom: -20px;
+        font-size: 43px;
+    }
+
+    .portfolio__book {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+    
+    .portfolio__book__link {
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-bottom: 60px;
+        max-width: inherit;
+        width: 350px;
+        height: 350px;
+        border-radius: 20px;
+    }
+
+    .portfolio__book__link:hover {
+        border-radius: 20px;
+    }
+    
+    .portfolio__book__link__article {
+        height: 350px;
+        border-radius: 20px;
+    }
+    
+    .portfolio__book__link__article__cover {
+        height: 350px;
+        border-radius: 20px;
+    }
+    
+    .portfolio__book__link:hover .portfolio__book__link__article__cover {
+        border-radius: 20px;
+    }
+    
+    .portfolio__book__link__article > div {
+        height: 100px;
+    }
+    
+    .portfolio__book__link__title {
+        text-align: right;
+        margin-left: 0;
+        right: 7%;
+        top: 0;
+        line-height: 36px;
+        letter-spacing: .5px;
+        font-size: 33px;
+    }
+    
+    .portfolio__book__link__article__info > h3 {
+        margin-left: 27px;
+        top: 19px;
+        font-size: 26px;
+        letter-spacing: 1px;
+    }
+    
+    .portfolio__book__link__article__info > p {
+        margin-left: 27px;
+        margin-right: 27px;
+        top: 35px;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+}

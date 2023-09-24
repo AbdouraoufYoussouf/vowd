@@ -1,0 +1,109 @@
+/**********************************************************************************************/
+/****************************************** contat-form ***************************************/
+/**********************************************************************************************/
+
+.form-contact {
+    top: 180vw;
+}
+
+.form__page2 {
+    display: none;
+}
+
+.form__next,
+.form__previous {
+    text-align: center;
+}
+
+.formModal {
+    height: auto;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    margin-bottom: 3vw;
+    width: 80vw;
+	border: 0;
+	border-radius: 1.2vw;
+    font-family: Open, sans-serif;
+ 	font-size: 6vw;
+    font-weight: 500;
+    letter-spacing: .1vw;
+    color: white;
+    background-color: rgb(2, 143, 235);
+    box-shadow: rgba(78, 58, 255, 0.301) 0px 30px 60px -12px inset, 
+    rgba(0, 17, 255, 0.719) 0px 18px 36px -18px inset;
+    transition: background-color .2s;
+}
+
+.formModal:hover {
+    background-color: rgb(49, 170, 250);
+    transition: .2s;
+}
+
+.formModal:active {
+	background-color: rgb(141, 198, 236);
+}
+
+.disabled {
+    cursor: not-allowed;
+    opacity: .3;
+}
+
+.abled {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.contact-submit {
+	position: relative;
+    width: 80vw;
+	height: auto;
+    padding: 5vw;
+    margin-bottom: 3vw;
+    border-radius: 1.2vw;
+    font-family: Open, sans-serif;
+    font-size: 6vw;
+    font-weight: 500;
+    letter-spacing: .1vw;
+    color: white;
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /***************************************** contact-form ***************************************/
+    /**********************************************************************************************/
+
+    .form__next,
+    .form__previous,
+    .formModal,
+    .contact-submit {
+        margin-bottom: 12px;
+        width: 300px;
+        padding: 20px;
+        border-radius: 6px;
+        font-size: 25px;
+        letter-spacing: .5px;
+    }
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 599px ****************************************/
+
+@media screen and (min-width: 600px) {
+
+    /**********************************************************************************************/
+    /***************************************** contact-form ***************************************/
+    /**********************************************************************************************/
+
+    .formModal,
+    .contact-submit {
+        width: 500px;
+    }
+
+    .form-contact {
+        top: 135vw;
+    }
+}

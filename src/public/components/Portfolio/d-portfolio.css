@@ -1,0 +1,26 @@
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 991px ****************************************/
+
+@media screen and (min-width: 992px) {
+
+    /**********************************************************************************************/
+    /******************************************* portfolio ****************************************/
+    /**********************************************************************************************/
+
+    .portfolio__book {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .portfolio__book__link {
+        left: auto;
+        transform: none;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 60px;
+    }
+}

@@ -1,0 +1,218 @@
+/**********************************************************************************************/
+/******************************************* services *****************************************/
+/**********************************************************************************************/
+
+.services__icon {
+    margin-bottom: -5.8vw;
+    font-size: 9.7vw;
+    color: rgb(112, 190, 247);
+}
+
+.services__container {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+}
+
+.services__container__picture {
+    position: relative;
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    margin-bottom: -2vw;
+    filter: brightness(85%);
+}
+
+.services__container__picture2 {
+    display: none;
+}
+
+.sevices__container--fixe-position {
+    position: absolute;
+    display: inline-block;
+    margin-top: 10vw;
+    z-index: 200;
+}
+
+.services__container__blocks {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: 4vw;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+.block {
+    position: relative;
+    width: 85vw;
+    height: 35vw;
+    margin-top: 10vw;
+    padding-right: 5vw;
+}
+
+.block > h2 {
+    position: absolute;
+    font-family: 'Helvetica';
+    top: -30vw;
+    font-size: 25vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: radial-gradient(
+        circle farthest-corner at center center,
+        rgb(68, 172, 241),
+        rgb(4, 92, 133)
+    ) no-repeat;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: rgba(2, 143, 235, .2) .2vw 0 5vw;
+    z-index: -1;
+}
+
+.block-paragraph {
+    margin-left: 6.5vw;
+    margin-top: -6.5vw;
+    letter-spacing: .2vw;
+    width: 100%;
+}
+
+.block-paragraph__header {
+    line-height: 4.2vw;
+    font-family: 'Helvetica';
+    font-size: 4.8vw;
+    font-weight: bold;
+}
+
+.block-paragraph__text {
+    line-height: 3vw;
+    font-family: 'Open', sans-serif;
+    font-size: 4.5vw;
+    font-weight: 500;
+    line-height: 6vw;
+    color: rgb(235, 233, 233);
+}
+
+.block-paragraph__text > span {
+    font-weight: bolder;
+    color: rgb(0, 255, 234);
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /******************************************* services *****************************************/
+    /**********************************************************************************************/
+
+    .services__icon {
+        margin-bottom: -20px;
+        font-size: 40px;
+    }
+    
+    .services__container__picture2 {
+        position: relative;
+        display: block;
+        object-fit: contain;
+        width: auto;
+        height: 150vw;
+        float: right;
+        margin-bottom: -2vw;
+        filter: brightness(85%);
+    }
+
+    .services__container__picture {
+        display: none;
+    }
+    
+    .sevices__container--fixe-position {
+        margin-top: 0;
+    }
+
+    .services__container__blocks {
+        margin-top: 12vw;
+        margin-left: 5%;
+    }
+    
+    .block {
+        width: 90.7vw;
+        height: 37.6vw;
+        margin-top: 8.85vw;
+        margin-bottom: -5vw;
+        padding-right: 0vw;
+    }
+    
+    .block > h2 {
+        top: -31vw;
+        font-size: 21vw;
+    }
+    
+    .block-paragraph {
+        margin-left: 5.5vw;
+        margin-top: -9vw;
+        letter-spacing: .2vw;
+    }
+    
+    .block-paragraph__header {
+        font-size: 4vw;
+        line-height: 3.3vw;
+        letter-spacing: .4vw;
+    }
+    
+    .block-paragraph__text {
+        font-size: 3.5vw;
+        line-height: 5.7vw;
+    }
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 599px ****************************************/
+
+@media screen and (min-width: 600px) {
+
+    /**********************************************************************************************/
+    /******************************************* services *****************************************/
+    /**********************************************************************************************/
+
+    .sevices__container--fixe-position {
+        margin-top: 40px;
+    }
+
+    .services__container__blocks {
+        margin-left: 10%;
+    }
+    
+    .block {
+        width: 540px;
+        height: 170px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        padding-right: 60px;
+    }
+    
+    .block > h2 {
+        top: -140px;
+        font-size: 100px;
+    }
+    
+    .block-paragraph {
+        margin-left: 25px;
+        margin-top: -40px;
+        letter-spacing: 1px;
+    }
+    
+    .block-paragraph__header {
+        font-size: 22px;
+        line-height: 15px;
+        letter-spacing: 2px;
+    }
+    
+    .block-paragraph__text {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}

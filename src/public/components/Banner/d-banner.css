@@ -1,0 +1,39 @@
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 991px ****************************************/
+
+@media screen and (min-width: 992px) {
+
+    /**********************************************************************************************/
+    /********************************************* banner *****************************************/
+    /**********************************************************************************************/
+
+    .banner__title{
+        margin-bottom: 80px;
+        font-size: 60px;
+        line-height: 120px;
+        letter-spacing: 6px;
+    }
+    
+    .banner__title > span {
+        font-size: 160px;
+    }
+
+    .banner__title-o {
+        margin-right: 5px;
+    }
+
+    .banner__button {
+        top: -42vw;
+        padding-left: 9px;
+        width: 220px;
+        height: 62px;
+        border-radius: 30px;
+        z-index: 1000;
+    }
+
+    .banner__subtitle {
+        top: -380px;
+        font-size: 50px;
+        letter-spacing: 2px;
+    }
+}

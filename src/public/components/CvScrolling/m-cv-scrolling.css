@@ -1,0 +1,126 @@
+/**********************************************************************************************/
+/****************************************** cv-scrollig ***************************************/
+/**********************************************************************************************/
+
+.cv__container {
+    position: relative;
+    margin-top: 10vw;
+    width: 100%;
+    height: 174vw;
+    overflow: hidden;
+}
+
+.cv__container__elevator__inactif {
+    position: relative;
+    margin-top: 0;
+    transition: .3s;
+}
+
+.cv__container__elevator__actif {
+    position: relative;
+    margin-top: -168vw;
+    transition: .3s;
+}
+
+.cv__container__title {
+    position: relative;
+    margin-top: 0;
+    width: 100%;
+    padding-left: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    letter-spacing: .4vw;
+    font-size: 6vw;
+    font-weight: 500;
+    text-align: start;
+    border-radius: 1vw;
+    background-color: rgb(224, 218, 218);
+}
+
+.cv__container__list {
+    position: relative;
+    margin-top: -5vw;
+    padding-left: 2vw;
+    letter-spacing: .2vw;
+    font-size: 5vw;
+    font-weight: 500;
+    text-align: start;
+}
+
+.button {
+    position: absolute;
+    margin-top: -6vw;
+    border: 0;
+    left: 0;
+    width: 100%;
+    height: 16.4vw;
+    z-index: 200;
+    font-family: Open, sans-serif;
+    font-weight: 400;
+    color: rgb(29, 131, 97);
+    cursor: pointer;
+}
+
+.cv__container__button {
+    font-size: 5.4vw;
+    background-color: rgb(215, 228, 224);
+    transition: .1s;
+}
+
+.cv__container__button:hover {
+    font-size: 6vw;
+    background-color: rgb(188, 226, 215);
+    transition: .1s;
+}
+
+.cv__container__button:active {
+    background-color: rgb(225, 238, 234);
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /****************************************** cv-scrollig ***************************************/
+    /**********************************************************************************************/
+
+    .cv__container {
+        margin-top: 35px;
+        height: 999px;
+    }
+    
+    .cv__container__elevator__actif {
+        margin-top: -700px;
+    }
+    
+    .cv__container__title {
+        padding-left: 15px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        letter-spacing: 1.5px;
+        font-size: 28px;
+        border-radius: 8px;
+    }
+    
+    .cv__container__list {
+        margin-top: -25px;
+        padding-left: 15px;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+    
+    .button {
+        margin-top: -297px;
+        height: 63px;
+    }
+    
+    .cv__container__button {
+        font-size: 24px;
+    }
+    
+    .cv__container__button:hover {
+        font-size: 26px;
+    }
+}

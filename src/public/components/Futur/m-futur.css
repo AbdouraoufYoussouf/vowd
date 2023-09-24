@@ -1,0 +1,188 @@
+/**********************************************************************************************/
+/********************************************* futur ******************************************/
+/**********************************************************************************************/
+
+.futur__icon {
+    margin-bottom: -8.8vw;
+    font-size: 10.5vw;
+    color: rgb(112, 190, 247);
+}
+
+.futur__container {
+    position: relative;
+    top: 0;
+    width: auto;
+    height: 455vw;
+    background-image: 
+    url("https://www.transparenttextures.com/patterns/cubes.png"),
+    linear-gradient(rgb(14, 59, 90), rgb(25, 99, 148));
+}
+
+.futur__container__work {
+    position: relative;
+    width: auto;
+    height: 50vw;
+    margin-bottom: 20vw;
+    background-color: white;
+}
+
+.futur__container__work__desktop {
+    position: absolute;
+    top: 10vw;
+    left: 30vw;
+    width: 60vw;
+    height: auto;
+}
+
+.futur__container__work__header {
+    position: absolute;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    padding-left: 6vw;
+    padding-top: 9vw;
+    margin-top: 0;
+    margin-bottom: 10vw;
+    font-size: 9vw;
+    font-weight: 700;
+    line-height: 9vw;
+    color: rgb(25, 99, 148);
+}
+
+.futur__container__content {
+    width: auto;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    margin-bottom: 0;
+    padding-bottom: 40vw;
+    font-size: 4.8vw;
+    font-weight: 300;
+    line-height: 6vw;
+    text-align: left;
+    letter-spacing: unset;
+    color: white;
+}
+
+.futur__container__content > li > span {
+    font-weight: bold;
+    color: white;
+}
+
+.pen {
+    position: relative;
+    left: 50%;
+    margin-bottom: 3.5vw;
+    transform: translate(-50%, 0);
+    width: 18vw;
+    height: auto;
+}
+
+.illustration {
+    position: relative;
+    left: 50%;
+    margin-bottom: 2.5vw;
+    transform: translate(-50%, 0);
+    width: 15vw;
+    height: auto;
+}
+
+.responsive {
+    position: relative;
+    left: 50%;
+    margin-bottom: 3.2vw;
+    transform: translate(-50%, 0);
+    width: 14vw;
+    height: auto;
+    filter: brightness(120%);
+}
+
+.seo {
+    position: relative;
+    left: 50%;
+    margin-bottom: 3vw;
+    transform: translate(-50%, 0);
+    width: 15vw;
+    height: auto;
+}
+
+.hands {
+    position: relative;
+    left: 50%;
+    margin-bottom: 3vw;
+    transform: translate(-50%, 0);
+    width: 28vw;
+    height: auto;
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /********************************************* futur ******************************************/
+    /**********************************************************************************************/
+    
+    .futur__icon {
+        margin-bottom: -31px;
+        font-size: 40px;
+    }
+
+    .futur__container {
+        height: 2050px;
+    }
+    
+    .futur__container__work {
+        height: 200px;
+        margin-bottom: 100px;
+    }
+    
+    .futur__container__work__desktop {
+        top: 35px;
+        right: 50vw;
+        width: 250px;
+        height: auto;
+    }
+
+    .futur__container__work__header {
+        padding-top: 25px;
+        margin-bottom: 27px;
+        font-size: 36px;
+        line-height: 40px;
+    }
+    
+    .futur__container__content {
+        margin-left: 6vw;
+        margin-right: 6vw;
+        padding-bottom: 100px;
+        margin-bottom: auto;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 1px;
+    }
+    
+    .pen {
+        margin-bottom: 30px;
+        width: 81px;
+    }
+    
+    .illustration {
+        margin-bottom: 28px;
+        width: 77px;
+    }
+    
+    .responsive {
+        margin-bottom: 28px;
+        width: 79px;
+    }
+    
+    .seo {
+        margin-bottom: 25px;
+        width: 78px;
+    }
+    
+    .hands {
+        margin-bottom: 25px;
+        width: 150px;
+    }
+}

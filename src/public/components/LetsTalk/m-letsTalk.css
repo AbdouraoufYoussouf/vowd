@@ -1,0 +1,64 @@
+/**********************************************************************************************/
+/******************************************* letsTalk *****************************************/
+/**********************************************************************************************/
+
+.letsTalk {
+    height: auto;
+}
+
+.letsTalk__icon {
+    margin-bottom: -6.6vw;
+    font-size: 10vw;
+    color: rgb(112, 190, 247);
+}
+
+.letsTalk__vdo {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: -2vw;
+    filter: grayscale(1) brightness(80%);
+}
+
+.letsTalk__discount {
+    position: absolute;
+    display: inline-block;
+    top: 361vw;
+    left: 0;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    font-size: 5vw;
+    font-family: 'Helvetica';
+    font-weight: bolder;
+    background-color: rgb(0, 196, 179);
+    color: white;
+    z-index: 200;
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /******************************************* letsTalk *****************************************/
+    /**********************************************************************************************/
+
+    .letsTalk__icon {
+        margin-bottom: -23px;
+        font-size: 42px;
+    }
+
+    .letsTalk__discount {
+        top: 1500px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 18px;
+        padding-right: 18px;
+        margin-top: 0;
+        font-size: 25px;
+        font-weight: 600;
+    }
+}

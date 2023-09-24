@@ -1,0 +1,70 @@
+/**********************************************************************************************/
+/********************************************* login ******************************************/
+/**********************************************************************************************/
+.form-group{
+    display:flex;
+    flex-direction:column !important;
+    align-items:flex-start; 
+}
+
+.login {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 180vw;
+    background-color: rgb(174, 194, 205);
+    top: 0;
+    z-index: 2000;
+}
+
+.login__header {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    width: auto;
+    height: auto;
+    padding: 5vw;
+    margin: 0;
+    color: white;
+    font-weight: 400;
+    font-size: 4.5vw;
+    line-height: 6vw;
+    letter-spacing: .1vw;
+    background-color: rgb(32, 53, 65);
+}
+
+.login__header > a {
+    color: rgb(0, 225, 255);
+}
+
+.login__title {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 100px;
+    z-index: 1000;
+}
+
+.form-login {
+    margin-top: 180px;
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /********************************************* login ******************************************/
+    /**********************************************************************************************/
+    .login__header {
+        text-align: center;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+}

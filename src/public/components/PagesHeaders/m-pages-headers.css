@@ -1,0 +1,130 @@
+/**********************************************************************************************/
+/***************************************** pages-headers **************************************/
+/**********************************************************************************************/
+
+.title-container {
+    position: relative;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    text-align: center;
+    width: auto;
+    height: auto;
+    background-image: linear-gradient(rgb(6, 78, 109), rgb(19, 95, 128));
+    z-index: 100;
+    overflow: hidden;
+}
+
+h2 {
+    position: relative;
+    font-size: 8vw;
+    letter-spacing: .4vw;
+    color: white;
+}
+
+h2 > span {
+    color: rgb(143, 208, 255);
+}
+
+h3 {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: -2vw;
+    font-weight: 400;
+    font-size: 5vw;
+    line-height: 7vw;
+    letter-spacing: .4vw;
+}
+
+.underline {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 5vw;
+    width: 25vw;
+    height: 1.2vw;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.paragraph {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-top: 15vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    font-weight: 300;
+    font-size: 4.5vw;
+    line-height: 6vw;
+    text-align: left;
+    letter-spacing: .5vw;
+}
+
+.container-icons {
+    position: relative;
+    margin-top: 25vw;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20vw;
+}
+
+.faHandHolding {
+    font-size: 14vw;
+    color: white;
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /***************************************** pages-headers **************************************/
+    /**********************************************************************************************/
+
+    .title-container {
+        padding-top: 40px;
+        padding-bottom: 15px;
+    }
+    
+    h2 {
+        font-size: 35px;
+        letter-spacing: 1px;
+    }
+    
+    h3 {
+        margin-top: 0;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 2px;
+    }
+    
+    .underline {
+        margin-top: 32px;
+        width: 110px;
+        height: 5px;
+        border-radius: 50%;
+    }
+    
+    .paragraph {
+        margin-top: 90px;
+        margin-left: 6vw;
+        margin-right: 6vw;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 1px;
+    }
+    
+    .container-icons {
+        margin-top: 15vw;
+        margin-bottom: 10vw;
+    }
+    
+    .faHandHolding {
+        font-size: 52px;
+        color: white;
+    }
+}

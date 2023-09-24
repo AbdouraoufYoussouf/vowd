@@ -1,0 +1,45 @@
+/********************************************************************************************/
+/******************************************** card ******************************************/
+/********************************************************************************************/
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 2vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    background: linear-gradient(rgb(17, 29, 39), rgb(108, 121, 129));
+    color: rgb(231, 244, 253);
+    top: 0;
+    z-index: 2000;
+}
+
+.card__title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card__container {
+    text-align: left;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.card__container__info {
+    color: black;
+    font-family: Open, sans-serif;
+}
+
+.card__society{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(83, 131, 219);
+}

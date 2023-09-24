@@ -1,0 +1,279 @@
+/**********************************************************************************************/
+/********************************************* banner *****************************************/
+/**********************************************************************************************/
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding-left: 6.5vw;
+}
+
+.banner__title{
+    position: relative;
+    top: 5vw;
+    margin-bottom: 20vw;
+    margin-left: -1.5vw;
+	font-family: 'Michroma', sans-serif;
+	font-weight: bold;
+	font-size: 8vw;
+	color: rgb(231, 244, 253);
+    line-height: 15vw;
+    letter-spacing: .7vw;
+    z-index: 1000;
+}
+
+.banner__title > span {
+	font-size: 20vw;
+	font-weight: bold;
+}
+
+.banner__title-v {
+    color: rgb(162, 215, 253);
+}
+
+.banner__title-o {
+    color: rgb(111, 173, 253);
+    margin-right: .5vw;
+}
+
+.banner__title-v,
+.banner__title-o {
+    animation: reveal1 ease 5s normal forwards 1;
+}
+
+.banner__title-w {
+    color: rgb(68, 148, 252);
+    animation: reveal1 ease 8s normal forwards 1;
+}
+
+.banner__title-d {
+    color: rgb(55, 120, 206);
+    animation: reveal1 ease 9s normal forwards 1;
+}
+
+@keyframes reveal1 {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes reveal2 {
+    0%{opacity: 0;}
+    35%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.banner__button {
+    position: relative;
+    align-items: center;
+    display: flex;
+    left: 17vw;
+    bottom: 20vw;
+    margin-top: 45vw;
+    margin-bottom: 20vw;
+    padding-left: 2vw;
+    flex-wrap: nowrap;
+    max-width: 53vw;
+    width: auto;
+    height: 15vw;
+    border-radius: 12vw;
+    background: linear-gradient(rgb(51, 108, 182), rgb(70, 130, 209));
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    animation-duration: 2s;
+    animation-name: reveal2;
+    z-index: 100;
+}
+
+.banner__button:after {
+    content: '';
+    position: absolute;
+    align-items: center;
+    display: flex;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 12vw;
+    background: linear-gradient(rgb(15, 59, 88), rgb(42, 85, 114));
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+
+.banner__button:hover:after {
+   opacity: 1;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.banner__button:hover .banner__button__btn,
+.banner__button:hover .banner__button__text {
+    color: rgb(77, 233, 220);
+    transition: color .4s;
+}
+
+.banner__button:active {
+    background: linear-gradient(rgb(51, 108, 182), rgb(70, 130, 209));
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.banner__button:active .banner__button__btn,
+.banner__button:active .banner__button__text {
+    color: rgb(231, 244, 253);
+}
+
+.banner__button__btn {
+    position: relative;
+    margin-right: 3vw;
+    font-size: 11vw;
+    color: rgb(231, 244, 253);
+    transition: color .4s;
+    z-index: 1;
+}
+
+.banner__button__text {
+    position: relative;
+    vertical-align: middle;
+    font-family: 'Open-sans', sans-serif;
+    font-size: 4.7vw;
+    font-weight: bold;
+    letter-spacing: .3vw;
+    color: rgb(231, 244, 253);
+    transition: color .4s;
+    z-index: 1;
+}
+
+.banner__subtitle {
+    position: relative;
+    top: -8vw;
+    margin-bottom: 0;
+    width: 100%;
+    font-family: 'Michroma', sans-serif;
+    font-size: 6.5vw;
+    font-weight: 500;
+    letter-spacing: .5vw;
+    color: rgb(162, 215, 253);
+    animation-duration: 2.3s;
+    animation-name: train;
+    z-index: 1000;
+}
+
+.banner__picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    margin-bottom: -2vw;
+}
+
+.banner__picture2 {
+    display: none;
+}
+
+.banner__picture--in {
+    opacity: 7;
+    transition: 2s;
+}
+
+.banner__picture--out {
+    opacity: 0;
+    transform: scale(1.08, 1.08);
+    transition: all 2s ease;
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /********************************************* banner *****************************************/
+    /**********************************************************************************************/
+    
+    .banner {
+        padding-left: 50px;
+        height: 100vw;
+    }
+    
+    .banner__title{
+        top: 30px;
+        margin-bottom: 90px;
+        margin-left: -5px;
+        font-size: 35px;
+        line-height: 62px;
+        letter-spacing: 4.5px;
+    }
+    
+    .banner__title > span {
+        font-size: 80px;
+    }
+
+    .banner__title-o {
+        margin-right: 2px;
+    }
+    
+    .banner__button {
+        top: -39vw;
+        left: 0;
+        padding-left: 9px;
+        width: 220px;
+        height: 62px;
+        border-radius: 30px;
+        z-index: 1000;
+    }
+    
+    .banner__button:after {
+        border-radius: 30px;
+    }
+    
+    .banner__button__btn {
+        margin-right: 16px;
+        font-size: 44px;
+    }
+    
+    .banner__button__text {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .banner__subtitle {
+        text-align: inherit;
+        top: -260px;
+        font-size: 27px;
+        letter-spacing: 1.5px;
+    }
+    
+    .banner__picture2 {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 100vw;
+        margin-bottom: -2vw;
+    }
+
+    .banner__picture {
+        display: none;
+    }
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 767px ****************************************/
+
+@media screen and (min-width: 768px) {
+
+    /**********************************************************************************************/
+    /********************************************* banner *****************************************/
+    /**********************************************************************************************/
+    
+    .banner__subtitle {
+        text-align: center;
+        margin-left: -25px;
+        top: -20vw;
+        font-size: 35px;
+        letter-spacing: 1.5px;
+    }
+}
